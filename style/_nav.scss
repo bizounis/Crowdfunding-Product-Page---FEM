@@ -1,0 +1,15 @@
+@import 'variables';
+
+.topnav .icon{
+    display: none;
+}
+
+nav{
+    a{
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        padding-right: 3rem;
+    }
+}
+

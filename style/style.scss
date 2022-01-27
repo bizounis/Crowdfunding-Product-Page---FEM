@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+
+body{
+    background-color: $gray;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    text-align: center;
+}
