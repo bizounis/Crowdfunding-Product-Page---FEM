@@ -9,6 +9,10 @@
     padding: 2rem 1.5rem;
     margin-top: 1.5rem;
     position: relative;
+
+    &:target{
+        border: 5px solid red;
+    }
 }
 
 .product__row{
@@ -33,4 +37,8 @@
 
 .pledge_info{
     color: $cyan;
+}
+
+.amount_left_text{
+    margin-left: .2rem;
 }

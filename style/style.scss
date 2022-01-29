@@ -2,6 +2,7 @@
 @import 'header';
 @import 'footer';
 @import 'products';
+@import 'modal';
 
 body{
     background-color: $gray;
@@ -27,7 +28,7 @@ section{
 
     h3{
         font-weight: 700;
-        font-size: 170%;
+        font-size: 160%;
     }
 
     p{
@@ -46,6 +47,10 @@ button{
 
     &:hover{
         background: $cyan_dark;
+    }
+
+    &.btn_disabled{
+        background: $dark_gray;
     }
 }
 

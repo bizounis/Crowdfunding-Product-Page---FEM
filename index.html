@@ -86,7 +86,7 @@
             <h3 class="amount_left_number">101</h3>
             <p class="amount_left_text">left</p>
           </div>
-          <a href="http://" target="_blank" rel="noopener noreferrer"><button>Select Reward</button></a>
+          <button id="bamboo">Select Reward</button>
         </div>
         
       </div>
@@ -105,7 +105,7 @@
             <h3 class="amount_left_number">64</h3>
             <p class="amount_left_text">left</p>
           </div>
-          <a href="#" target="_blank" rel="noopener noreferrer"><button>Select Reward</button></a>
+          <button id="black_edition">Select Reward</button>
         </div>
       </div>
 
@@ -124,10 +124,22 @@
             <h3 class="amount_left_number">0</h3>
             <p class="amount_left_text">left</p>
           </div>
-          <a href="#" target="_blank" rel="noopener noreferrer"><button disabled>Out of Stock</button></a>
+          <button class="btn_disabled" disabled>Out of Stock</button>
         </div>
       </div>
     </section>
+
+    <!--MODAL SECTION-->
+    <div class="modal" id="product_modal">
+      <section class="modal_container">
+        <span class="close">&times;</span>
+        <h3>Back this project</h3>
+        <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+      </section>
+    </div>
+
+    <!--MODAL SECTION END-->
+
   </main>
   
   <footer>
@@ -139,5 +151,40 @@
     </div>
     
   </footer>
+
+
+  <!--MODAL SCRIPT-->
+  <script>
+    // Get the modal
+    var modal = document.getElementById("product_modal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("bamboo");
+    var btn2 = document.getElementById("black_edition");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    btn2.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+   <!--MODAL SCRIPT END-->
 </body>
 </html>
