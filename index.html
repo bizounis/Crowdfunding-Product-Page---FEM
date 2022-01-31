@@ -135,7 +135,53 @@
         <span class="close">&times;</span>
         <h3>Back this project</h3>
         <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+
+        <div class="pledge__container">
+          <div class="product__row">
+            <button class="accordionButton">press me</button>
+            <h3 class="product_name">Black Edition Stand</h3>
+            <p class="pledge_info">Pledge $75 or more</p>
+          </div>
+          
+          <p class="product_desc">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+            member list. Shipping is included.</p>
+
+          
+          <div class="accordionContent" id="panel">
+            <div class="pledge__row">
+              <div class="amount_left"> 
+                <h3 class="amount_left_number">64</h3>
+                <p class="amount_left_text">left</p>
+              </div>
+              <button id="black_edition">Select Reward</button>
+            </div>
+          </div>  
+          
+        </div>
+
+        <div class="pledge__container">
+          <div class="product__row">
+            <button class="accordionButton">press me</button>
+            <h3 class="product_name">Black Edition Stand</h3>
+            <p class="pledge_info">Pledge $75 or more</p>
+          </div>
+          
+          <p class="product_desc">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+            member list. Shipping is included.</p>
+
+          
+          <div class="accordionContent" id="panel">
+            <div class="pledge__row">
+              <div class="amount_left"> 
+                <p>Enter your pledge</p>
+              </div>
+              <button id="black_edition">Select Reward</button>
+            </div>
+          </div>  
+          
+        </div>
       </section>
+
     </div>
 
     <!--MODAL SECTION END-->
@@ -186,5 +232,17 @@
     }
     </script>
    <!--MODAL SCRIPT END-->
+
+   <script>
+     document.querySelectorAll('.accordionButton').forEach(button =>{
+       button.addEventListener('click', () =>{
+        document.querySelectorAll('.pledge__row').forEach(pop =>{
+          pop.classList.toggle('__active');
+        })
+       })
+     })
+   </script>
 </body>
 </html>
+
+<!-- button.classList.toggle('pledge__row__active'); -->

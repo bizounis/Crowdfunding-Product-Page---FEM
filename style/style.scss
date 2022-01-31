@@ -90,3 +90,11 @@ button{
     margin-right: 30px;
 }
 
+.pledge__row{
+    display: none;
+
+    &.__active{
+        display: flex;
+        align-items: center;
+    }
+}
